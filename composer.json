@@ -21,5 +21,8 @@
         "psr-4": {
             "kbATeam\\AppVersion\\": "src/"
         }
+    },
+    "extra": {
+        "installer-name": "AppVersion"
     }
 }
