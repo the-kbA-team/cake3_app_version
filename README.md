@@ -21,5 +21,5 @@ composer require kba-team/cake3_app_version
 2. Include the plugin in your `bootstrap.php`
 ```php
 <?php
-CakePlugin::load('AppVersion', ['bootstrap' => true, 'routes' => false]);
+Plugin::load('kbATeam/AppVersion', ['bootstrap' => true, 'routes' => false]);
 ```
