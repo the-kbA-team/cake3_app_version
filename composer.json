@@ -14,7 +14,6 @@
     "require": {
         "php": "^7.0",
         "cakephp/cakephp": "3.*",
-        "composer/installers": "*",
         "kba-team/version": "^1.0"
     },
     "autoload": {
