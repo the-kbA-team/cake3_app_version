@@ -26,7 +26,7 @@ class Version
     public static function string($file = null)
     {
         if ($file === null) {
-            $file = APP.DS.'webroot'.DS.'commit.json';
+            $file = ROOT.DS.'webroot'.DS.'commit.json';
         }
         static $version;
         static $versionFile;
@@ -35,7 +35,7 @@ class Version
             if ($version->exists()) {
                 $versionFile = $file;
             } else {
-                $version = new GitVersion(APP);
+                $version = new GitVersion(ROOT);
             }
         }
         if ($version->exists()) {
