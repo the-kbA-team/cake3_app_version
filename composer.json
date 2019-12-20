@@ -1,0 +1,25 @@
+{
+    "name": "kba-team/cake3_app_version",
+    "description": "CakePHP 3.x plugin to determine the current version of your application. The version is either taken from the commit.json of the deploy script or from the local clone of the git repository.",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Gregor J.",
+            "email": "gregor-j@users.noreply.github.com",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "cakephp/cakephp": "3.*",
+        "composer/installers": "*",
+        "kba-team/version": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "kbATeam\\AppVersion\\": "src/"
+        }
+    }
+}
