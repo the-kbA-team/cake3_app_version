@@ -18,12 +18,6 @@ use kbATeam\Version\GitVersion;
 class Version
 {
     /**
-     * The default JSON file to use when no parameter is given to string().
-     * @var string
-     */
-    public static $defaultFile = APP.DS.'webroot'.DS.'commit.json';
-
-    /**
      * Get the current application version either from the given file, a default file
      * location or from the current GIT repository.
      * @param string|null $file
@@ -32,7 +26,7 @@ class Version
     public static function string($file = null)
     {
         if ($file === null) {
-            $file = static::$defaultFile;
+            $file = APP.DS.'webroot'.DS.'commit.json';
         }
         static $version;
         static $versionFile;
